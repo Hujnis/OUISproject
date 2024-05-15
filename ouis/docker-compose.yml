@@ -96,7 +96,7 @@ services:
 
   gql_events:
     # image: nafreju2/gql_events # where u user.events
-    image: hrbolek/gql_events:0.8.5 # where u user.events
+    image: hrbolek/gql_events:0.8.6 # where u user.events
     environment:
       # link na db mimo stack
       # - POSTGRES_HOST=host.docker.internal:5432
