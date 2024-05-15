@@ -1,5 +1,4 @@
 # OUISproject
 
-Zadání č.9:
-Analýza publikací u skupiny v časovém období (gql_ug + gql_publications)
-
+# Zadání č 8. 
+Analýza plánovaných hodin na učebně v daném časovém období (gql_facilities + gql_events)
