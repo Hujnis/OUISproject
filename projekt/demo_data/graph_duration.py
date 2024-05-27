@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Cesta k vstupnímu souboru
-input_file_path = "C:/Users/thujn/OUISproject/projekt/duration_results.json"
+input_file_path = "C:/Users/thujn/OUISproject/projekt/demo_data/duration_results.json"
 
 # Načtení dat ze vstupního souboru
 with open(input_file_path, 'r', encoding='utf-8') as file:

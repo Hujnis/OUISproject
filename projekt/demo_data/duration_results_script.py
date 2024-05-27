@@ -2,8 +2,8 @@ import json
 from datetime import datetime
 
 # Cesta k vstupnímu a výstupnímu souboru
-input_file_path = "C:/Users/thujn/OUISproject/projekt/data.json"
-output_file_path = "C:/Users/thujn/OUISproject/projekt/duration_results.json"
+input_file_path = "C:/Users/thujn/OUISproject/projekt/demo_data/data.json"
+output_file_path = "C:/Users/thujn/OUISproject/projekt/demo_data/duration_results.json"
 
 # Načtení dat ze vstupního souboru
 with open(input_file_path, 'r', encoding='utf-8') as file:

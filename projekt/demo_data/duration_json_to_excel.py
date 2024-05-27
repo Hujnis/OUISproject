@@ -2,9 +2,9 @@ import json
 import pandas as pd
 
 # Cesta k vstupnímu souboru
-input_file_path = "C:/Users/thujn/OUISproject/projekt/duration_results.json"
+input_file_path = "C:/Users/thujn/OUISproject/projekt/demo_data/duration_results.json"
 # Cesta k výstupnímu Excel souboru
-output_file_path = "C:/Users/thujn/OUISproject/projekt/excel_table_duration.xlsx"
+output_file_path = "C:/Users/thujn/OUISproject/projekt/demo_data/excel_table_duration.xlsx"
 
 # Načtení dat ze vstupního souboru
 with open(input_file_path, 'r', encoding='utf-8') as file:
