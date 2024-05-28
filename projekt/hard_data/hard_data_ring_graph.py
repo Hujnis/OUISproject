@@ -1,9 +1,9 @@
 import json
+from collections import defaultdict
 import plotly.graph_objects as go
 
-# Cesty k souborům
+# Cesta k souboru s JSON daty
 input_json_path = 'C:/Users/thujn/OUISproject/projekt/hard_data/hard_data.json'
-
 
 # Načtení JSON dat ze souboru
 with open(input_json_path, 'r', encoding='utf-8') as file:
@@ -12,85 +12,77 @@ with open(input_json_path, 'r', encoding='utf-8') as file:
 # Extrakce dat z JSON
 events = json_data['data']['eventPage']
 
-# Příprava dat pro analýzu
-groups = {}
-places = {}
-event_names = {}
-event_types = {}
+# Agregace dat
+aggregated_data = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
 
 for event in events:
-    for group in event['groups']:
-        group_name = group['name']
-        if group_name not in groups:
-            groups[group_name] = {
-                'places': {},
-                'event_names': {},
-                'event_types': {}
-            }
-        
-        place_name = event['place']
-        event_name = event['name']
-        event_type = event['eventType']['name']
-        
-        groups[group_name]['places'][place_name] = groups[group_name]['places'].get(place_name, 0) + 1
-        groups[group_name]['event_names'][event_name] = groups[group_name]['event_names'].get(event_name, 0) + 1
-        groups[group_name]['event_types'][event_type] = groups[group_name]['event_types'].get(event_type, 0) + 1
+    group_name = event["groups"][0]["name"]
+    place = event["place"]
+    event_name = event["name"]
+    
+    aggregated_data[group_name][place][event_name].append(event_name)
 
-# Vytvoření vícevrstvého prstencového grafu pro každou skupinu
+# Vykreslení grafu
 fig = go.Figure()
 
-for group_name, data in groups.items():
-    # Střední vrstva - místa
-    fig.add_trace(go.Pie(
-        labels=list(data['places'].keys()),
-        values=list(data['places'].values()),
-        name=group_name,
-        hole=0.1,
-        textposition='auto',
-        textinfo='label',
-        hoverinfo='label+percent',
-        textfont=dict(size=9),  # Nastavení velikosti písma
-        marker=dict(line=dict(color='#000000', width=1))
-    ))
+# Nastavení barev pro jednotlivé vrstvy
+colors = ['#FFDDC1', '#FFABAB', '#FFC3A0', '#FF677D', '#D4A5A5', '#392F5A', '#31A2AC', '#61C0BF']
 
-    # Vnější vrstva - události
-    fig.add_trace(go.Pie(
-        labels=list(data['event_names'].keys()),
-        values=list(data['event_names'].values()),
-        name=group_name,
-        hole=0.4,
-        textposition='auto',
-        textinfo='label',
-        hoverinfo='label+percent',
-        textfont=dict(size=9),  # Nastavení velikosti písma
-        marker=dict(line=dict(color='#000000', width=1))
-    ))
+# Přidání vrstev do grafu
+layer1_labels = []
+layer1_values = []
+layer1_parents = []
 
-    # Vnější vnější vrstva - typy událostí
-    fig.add_trace(go.Pie(
-        labels=list(data['event_types'].keys()),
-        values=list(data['event_types'].values()),
-        name=group_name,
-        hole=0.8,
-        textposition='auto',
-        textinfo='label',
-        hoverinfo='label+percent',
-        textfont=dict(size=10),  # Nastavení velikosti písma
-        marker=dict(line=dict(color='#000000', width=1))
-    ))
+layer2_labels = []
+layer2_values = []
+layer2_parents = []
 
-# Nastavení středového textu
+layer3_labels = []
+layer3_values = []
+layer3_parents = []
+
+# Procházení agregovaných dat a naplnění jednotlivých vrstev
+for group, places in aggregated_data.items():
+    group_events_count = sum(len(event_types) for events in places.values() for event_types in events.values())
+    layer1_labels.append(group)
+    layer1_values.append(group_events_count)
+    layer1_parents.append("")
+    
+    for place, events in places.items():
+        place_events_count = sum(len(event_types) for event_types in events.values())
+        layer2_labels.append(place)
+        layer2_values.append(place_events_count)
+        layer2_parents.append(group)
+        
+        for event_name, event_types in events.items():
+            layer3_labels.append(event_name)
+            layer3_values.append(len(event_types))
+            layer3_parents.append(place)
+
+# Vytvoření jednotlivých vrstev grafu
+labels = layer1_labels + layer2_labels + layer3_labels
+values = layer1_values + layer2_values + layer3_values
+parents = layer1_parents + layer2_parents + layer3_parents
+
+# Vytvoření hovertemplate pro zobrazení procentuálního výskytu
+total_value = sum(values)
+hover_template = '%{label}: %{value} (%{percentParent:.1%}, %{percentEntry:.1%} celkem)'
+
+fig.add_trace(go.Sunburst(
+    labels=labels,
+    parents=parents,
+    values=values,
+    branchvalues="total",
+    marker=dict(colors=colors),
+    maxdepth=3,  # Maxdepth 3, protože máme tři vrstvy
+    hovertemplate=hover_template
+))
+
+# Nastavení vzhledu grafu
 fig.update_layout(
-    annotations=[dict(text=group_name, x=0.5, y=0.5, font_size=13, showarrow=False) for group_name in groups],
-    showlegend=False
-)
-
-# Nastavení velikosti grafu
-fig.update_layout(
-    autosize=False,
-    width=800,
-    height=800,
-    margin=dict(t=50, b=50, l=50, r=50)
+    margin=dict(t=0, l=0, r=0, b=0),
+    sunburstcolorway=colors,
+    title="Vícevrstvý prstencový graf událostí"
 )
 
 # Zobrazení grafu
