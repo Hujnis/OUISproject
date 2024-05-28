@@ -1,0 +1,21 @@
+query DotazNaEventID {
+  eventPage {
+    id
+    name
+    place
+    placeId
+    #duration(unit:HOURS)
+    startdate
+    enddate
+    
+    eventType{
+      id
+      name
+    }
+    
+    groups{
+      id
+      name
+    }
+  }
+}
