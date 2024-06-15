@@ -1,0 +1,151 @@
+{
+  "data": {
+    "eventPage": [
+      {
+        "id": "4dccf52f-4117-403c-932a-5691c0d020b1",
+        "name": "2021/22",
+        "placeId": null,
+        "place": null,
+        "startdate": "2021-09-01T00:00:00",
+        "enddate": "2022-09-01T00:00:00",
+        "eventType": {
+          "id": "a517c2fd-8dc7-4a2e-a107-cbdb88ba2aa5",
+          "name": "Školní rok"
+        },
+        "groups": []
+      },
+      {
+        "id": "5194663f-11aa-4775-91ed-5f3d79269fed",
+        "name": "2022/23",
+        "placeId": null,
+        "place": null,
+        "startdate": "2022-09-01T00:00:00",
+        "enddate": "2023-09-01T00:00:00",
+        "eventType": {
+          "id": "a517c2fd-8dc7-4a2e-a107-cbdb88ba2aa5",
+          "name": "Školní rok"
+        },
+        "groups": []
+      },
+      {
+        "id": "a64871f8-2308-48ff-adb2-33fb0b0741f1",
+        "name": "2023/24",
+        "placeId": null,
+        "place": null,
+        "startdate": "2023-09-01T00:00:00",
+        "enddate": "2024-09-01T00:00:00",
+        "eventType": {
+          "id": "a517c2fd-8dc7-4a2e-a107-cbdb88ba2aa5",
+          "name": "Školní rok"
+        },
+        "groups": []
+      },
+      {
+        "id": "9d05f000-7a9d-495d-9257-b597c5c6cb6a",
+        "name": "2024/25",
+        "placeId": null,
+        "place": null,
+        "startdate": "2024-09-01T00:00:00",
+        "enddate": "2025-09-01T00:00:00",
+        "eventType": {
+          "id": "a517c2fd-8dc7-4a2e-a107-cbdb88ba2aa5",
+          "name": "Školní rok"
+        },
+        "groups": []
+      },
+      {
+        "id": "08ff1c5d-9891-41f6-a824-fc6272adc189",
+        "name": "2022/23 ZS",
+        "placeId": null,
+        "place": null,
+        "startdate": "2022-09-01T00:00:00",
+        "enddate": "2023-03-01T00:00:00",
+        "eventType": {
+          "id": "69ec2b0b-a39d-40df-9cea-e295b36749c9",
+          "name": "Semestr"
+        },
+        "groups": []
+      },
+      {
+        "id": "0945ad17-3a36-4d33-b849-ad88144415ba",
+        "name": "2022/23 LS",
+        "placeId": null,
+        "place": null,
+        "startdate": "2023-03-01T00:00:00",
+        "enddate": "2023-09-01T00:00:00",
+        "eventType": {
+          "id": "69ec2b0b-a39d-40df-9cea-e295b36749c9",
+          "name": "Semestr"
+        },
+        "groups": []
+      },
+      {
+        "id": "9b642606-1551-4945-bc7d-ebb53cf513a7",
+        "name": "2023",
+        "placeId": null,
+        "place": null,
+        "startdate": "2023-01-01T00:00:00",
+        "enddate": "2023-12-31T23:59:59",
+        "eventType": {
+          "id": "e3ec17d6-6c41-4401-83f0-451f480d5940",
+          "name": "Účetní období"
+        },
+        "groups": []
+      },
+      {
+        "id": "45b2df80-ae0f-11ed-9bd8-0242ac110002",
+        "name": "Zkouška",
+        "placeId": null,
+        "place": null,
+        "startdate": "2023-04-19T08:00:00",
+        "enddate": "2023-04-19T09:00:00",
+        "eventType": {
+          "id": "b87d3ff0-8fd4-11ed-a6d4-0242ac110002",
+          "name": "Ostatní"
+        },
+        "groups": [
+          {
+            "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+            "name": "22-5KB-A"
+          },
+          {
+            "id": "9baf3d70-ae0f-11ed-9bd8-0242ac110002",
+            "name": "22-5KB-B"
+          },
+          {
+            "id": "9baf3de8-ae0f-11ed-9bd8-0242ac110002",
+            "name": "22-5KB-C"
+          },
+          {
+            "id": "9baf3e42-ae0f-11ed-9bd8-0242ac110002",
+            "name": "22-5KB-D"
+          },
+          {
+            "id": "9baf3e92-ae0f-11ed-9bd8-0242ac110002",
+            "name": "22-5KB-E"
+          },
+          {
+            "id": "9baf3eec-ae0f-11ed-9bd8-0242ac110002",
+            "name": "22-5KB-F"
+          },
+          {
+            "id": "9baf3f3c-ae0f-11ed-9bd8-0242ac110002",
+            "name": "22-5KB-G"
+          },
+          {
+            "id": "9baf3f96-ae0f-11ed-9bd8-0242ac110002",
+            "name": "22-5KB-H"
+          },
+          {
+            "id": "9baf3fe6-ae0f-11ed-9bd8-0242ac110002",
+            "name": "22-5KB-I"
+          },
+          {
+            "id": "9baf4040-ae0f-11ed-9bd8-0242ac110002",
+            "name": "22-5KB-J"
+          }
+        ]
+      }
+    ]
+  }
+}

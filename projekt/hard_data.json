@@ -1,0 +1,319 @@
+{
+    "data": {
+      "eventPage": [
+        {
+            "name": "Aplikované bezpečnostní technologie",
+            "place": "Š3/307",
+            "startdate": "2024-05-27T08:00:00",
+            "enddate": "2024-05-27T09:30:00",
+            "eventType": {
+              "name": "Laboratoř"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Anglický jazyk",
+            "place": "K44/266",
+            "startdate": "2024-05-27T09:50:00",
+            "enddate": "2024-05-27T11:20:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Analýzy a kritické myšlení",
+            "place": "T118",
+            "startdate": "2024-05-27T11:40:00",
+            "enddate": "2024-05-27T13:10:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "VOP",
+            "place": "K44/109",
+            "startdate": "2024-05-27T14:30:00",
+            "enddate": "2024-05-27T16:00:00",
+            "eventType": {
+              "name": "Přednáška"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+
+
+
+
+
+
+
+        {
+            "name": "Kybernetická bezpečnost",
+            "place": "Š3/307",
+            "startdate": "2024-05-28T08:00:00",
+            "enddate": "2024-05-28T09:30:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Analýza informačních zdrojů",
+            "place": "Š9A/67a",
+            "startdate": "2024-05-28T09:50:00",
+            "enddate": "2024-05-28T11:20:00",
+            "eventType": {
+              "name": "Laboratoř"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Tělesná výchova",
+            "place": "TělCHOD",
+            "startdate": "2024-05-28T11:40:00",
+            "enddate": "2024-05-28T13:10:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Analýzy a kritické myšlení",
+            "place": "T118",
+            "startdate": "2024-05-28T14:30:00",
+            "enddate": "2024-05-28T16:00:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+
+
+
+
+
+
+
+        {
+            "name": "Aplikované bezpečnostní technologie",
+            "place": "Š3/307",
+            "startdate": "2024-05-29T08:00:00",
+            "enddate": "2024-05-29T09:30:00",
+            "eventType": {
+              "name": "Přednáška"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Kybernetická bezpečnost",
+            "place": "Š3/307",
+            "startdate": "2024-05-29T09:50:00",
+            "enddate": "2024-05-29T11:20:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Analýzy a kritické myšlení",
+            "place": "T118",
+            "startdate": "2024-05-29T11:40:00",
+            "enddate": "2024-05-29T13:10:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Počítačové sítě a jejich bezpečnost",
+            "place": "Š8/18",
+            "startdate": "2024-05-29T08:00:00",
+            "enddate": "2024-05-29T09:30:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+
+
+
+
+
+
+
+        {
+            "name": "Aplikované bezpečnostní technologie",
+            "place": "Š3/307",
+            "startdate": "2024-05-30T08:00:00",
+            "enddate": "2024-05-30T09:30:00",
+            "eventType": {
+              "name": "Laboratoř"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Aplikované bezpečnostní technologie",
+            "place": "Š3/307",
+            "startdate": "2024-05-30T09:50:00",
+            "enddate": "2024-05-30T11:20:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Tělesná výchova",
+            "place": "TělCHOD",
+            "startdate": "2024-05-30T11:40:00",
+            "enddate": "2024-05-30T13:10:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Počítačové sítě a jejich bezpečnost",
+            "place": "Š8/18",
+            "startdate": "2024-05-30T08:00:00",
+            "enddate": "2024-05-30T09:30:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+
+
+
+
+
+
+
+        {
+            "name": "Německý jazyk",
+            "place": "Š1/210",
+            "startdate": "2024-05-31T08:00:00",
+            "enddate": "2024-05-31T09:30:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Analýza informačních zdrojů",
+            "place": "Š9A/67a",
+            "startdate": "2024-05-31T09:50:00",
+            "enddate": "2024-05-31T11:20:00",
+            "eventType": {
+              "name": "Laboratoř"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        },
+        {
+            "name": "Analýzy a kritické myšlení",
+            "place": "T118",
+            "startdate": "2024-05-31T11:40:00",
+            "enddate": "2024-05-31T13:10:00",
+            "eventType": {
+              "name": "Cvičení"
+            },
+            "groups": [
+              {
+                "id": "9baf3b54-ae0f-11ed-9bd8-0242ac110002",
+                "name": "22-5KB-A"
+              }
+            ]
+        }
+      ]
+    }
+}
